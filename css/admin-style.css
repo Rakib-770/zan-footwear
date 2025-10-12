@@ -1,0 +1,343 @@
+/* General Admin Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Login Page Styles */
+.admin-login-page {
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-header {
+    background-color: #6a0304;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    overflow-x: hidden;
+}
+
+.admin-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.admin-container {
+    display: flex;
+    flex: 1;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #eff2f5;
+    min-height: calc(100vh - 56px);
+}
+
+/* Topbar Styles */
+.admin-topbar {
+    background-color: #6a0304;
+    height: 56px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-topbar .navbar-brand {
+    color: white;
+}
+
+.admin-topbar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.admin-topbar .nav-link:hover {
+    color: white;
+}
+
+/* Sidenav Styles */
+.admin-sidenav {
+    width: 250px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    height: calc(100vh - 56px);
+}
+
+.sidenav-header {
+    padding: 20px;
+    background-color: white;
+    color: #6a0304;
+}
+
+.sidenav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-item a:hover {
+    background-color: #f5f5f5;
+    color: #6a0304;
+}
+
+.menu-item.active a {
+    /* background-color: rgba(106, 3, 4, 0.1);
+    color: #6a0304;
+    border-left: 3px solid #6a0304; */
+    background-color: #6a0304;
+    color: white;
+    border-left: 3px solid #6a0304;
+}
+
+/* Card Styles */
+.admin-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.admin-card .card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6a0304;
+    margin-bottom: 5px;
+}
+
+/* Button Styles */
+.admin-btn {
+    background-color: #6a0304;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.admin-btn:hover {
+    background-color: #4d0203;
+    color: white;
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    background-color: #f8f9fa;
+    color: #6a0304;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-sidenav {
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 56px;
+        height: calc(100vh - 56px);
+    }
+
+    .admin-sidenav.active {
+        width: 250px;
+    }
+
+    .admin-content {
+        margin-left: 0;
+    }
+}
+
+
+
+/* Contact Management Styles */
+.admin-contact-form .form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.admin-contact-form .form-floating label {
+    color: #6c757d;
+}
+
+.admin-contact-form .section-title {
+    color: #6a0304;
+    border-bottom: 2px solid #6a0304;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.btn.admin-contact-btn {
+    background-color: #6a0304;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn.admin-contact-btn:hover {
+    background-color: #4d0203;
+    color: white;
+}
+
+.admin-contact-form textarea.form-control {
+    min-height: 100px;
+}
+
+/* Contact Management Styles End */
+
+
+/* Team Management Style Start */
+
+.admin-team-card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.admin-team-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.admin-team-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.admin-team-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.admin-team-delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.admin-team-delete-btn:hover {
+    background-color: #bb2d3b;
+    color: white;
+}
+
+.admin-team-edit-btn {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.admin-team-edit-btn:hover {
+    background-color: #ffca2c;
+    color: black;
+}
+
+.admin-team-section-title {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Team Management Style End */
+
+
+/* Gallery Style Starts */
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.category-badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.video-card {
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Galley Style Ends */
