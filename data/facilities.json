@@ -1,0 +1,67 @@
+{
+  "page": {
+    "title": "Facilities",
+    "hero": {
+      "background_image": "images/carousel/ca-10.jpg",
+      "title": "Facilities",
+      "description": "Discover the world-class facilities and safety measures that ensure quality production and a safe working environment."
+    },
+    "facilities": [
+      {
+        "title": "Workplace Safety",
+        "image": "images/facilities/f-1.png",
+        "alt": "Workplace Safety",
+        "items": [
+          "Fire hydrant system",
+          "Addressable fire alarm system",
+          "Fire door UL Listed",
+          "Sufficient firefighting equipment",
+          "Proper use of PPE",
+          "Environment-friendly chemical management system"
+        ],
+        "layout": "normal"
+      },
+      {
+        "title": "Structural Facilities",
+        "image": "images/facilities/f-2.png",
+        "alt": "Structural Facilities",
+        "items": [
+          "Building: 06 stored vertical structure",
+          "Each production floor space: -- sq. Ft.",
+          "Total production floor space: -- sq. Ft.",
+          "Open space: -- sq. Ft.",
+          "Each floor has three exits to comply with all compliance requirements",
+          "Built-in firefighting system with automatic pump"
+        ],
+        "layout": "reverse"
+      },
+      {
+        "title": "Product Development",
+        "image": "images/facilities/f-3.png",
+        "alt": "Product Development",
+        "items": [
+          "The PD team has 4 designers with 15 sample operators.",
+          "One specially trained person for automatic pattern development and grading with Crispin software.",
+          "Plotter machine for pattern cutting.",
+          "2D input system."
+        ],
+        "layout": "normal"
+      },
+      {
+        "title": "In-house Physical Testing Lab",
+        "image": "images/facilities/f-4.png",
+        "alt": "Physical Testing Lab",
+        "items": [
+          "Universal Tensile Testing Machine",
+          "Hardness Testing Machine",
+          "Whole Shoe Flexing Machine",
+          "Density Meter",
+          "Light Box",
+          "Aging Woven",
+          "Thickness Meter"
+        ],
+        "layout": "reverse"
+      }
+    ]
+  }
+}

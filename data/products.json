@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "background_image": "images/carousel/man-foot.jpg",
+    "title": "Our Products",
+    "description": "Discover the story behind our passion for crafting exceptional footwear that blends timeless style, superior comfort, and long-lasting durability for every step of your journey.",
+    "buttons": [
+      {
+        "text": "Shop Collection",
+        "url": "shop.php",
+        "class": "btn btn-secondary me-2"
+      },
+      {
+        "text": "Our Story",
+        "url": "#our-story",
+        "class": "btn btn-white-outline"
+      }
+    ]
+  },
+  "intro_section": {
+    "title": "Crafted with excellent material.",
+    "description": "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+    "button_text": "Explore",
+    "button_url": "shop.php"
+  },
+  "featured_collections": [
+    {
+      "name": "Mens Collection",
+      "image": "images/products/product-2.jpg",
+      "url": "cart.php",
+      "category": "mens"
+    },
+    {
+      "name": "Womens Collection",
+      "image": "images/products/product-7.jpg",
+      "url": "cart.php",
+      "category": "womens"
+    },
+    {
+      "name": "Kids Collection",
+      "image": "images/products/product-6.jpg",
+      "url": "cart.php",
+      "category": "kids"
+    }
+  ],
+  "products": [
+    {
+      "name": "Air Force 1",
+      "image": "images/products/product-2.jpg",
+      "category": "mens"
+    },
+    {
+      "name": "Adidas Sambas",
+      "image": "images/products/product-7.jpg",
+      "category": "womens"
+    },
+    {
+      "name": "ASICS",
+      "image": "images/products/product-6.jpg",
+      "category": "kids"
+    },
+    {
+      "name": "Nike Air Force 1",
+      "image": "images/products/product-2.jpg",
+      "category": "mens"
+    },
+    {
+      "name": "New Balance 574",
+      "image": "images/products/product-7.jpg",
+      "category": "womens"
+    },
+    {
+      "name": "VEJA Campo",
+      "image": "images/products/product-6.jpg",
+      "category": "kids"
+    },
+    {
+      "name": "Brooks Ghost 15",
+      "image": "images/products/product-2.jpg",
+      "category": "mens"
+    },
+    {
+      "name": "Hoka Clifton 9",
+      "image": "images/products/product-7.jpg",
+      "category": "womens"
+    },
+    {
+      "name": "ASICS GEL",
+      "image": "images/products/product-6.jpg",
+      "category": "kids"
+    }
+  ]
+}

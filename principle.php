@@ -1,18 +1,26 @@
+<?php 
+// Read and decode the JSON data
+$json_data = file_get_contents('data/principle.json');
+$data = json_decode($json_data, true);
+$page_data = $data['page'];
+?>
+
 <?php include 'header.php'; ?>
 
 <!-- Start Inner Page Hero -->
-<div class="custom-hero2-about" style="background-image: url('images/carousel/ca-7.jpg');">
+<div class="custom-hero2-about" style="background-image: url('<?php echo $page_data['hero']['background_image']; ?>');">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
         <div class="custom-hero2-content">
-          <h1>Principle</h1>
+          <h1><?php echo $page_data['hero']['title']; ?></h1>
           <p class="mb-4">
-            Discover the story behind our passion for crafting exceptional footwear that blends timeless style, superior comfort, and long-lasting durability for every step of your journey.
+            <?php echo $page_data['hero']['description']; ?>
           </p>
           <p>
-            <a href="shop.php" class="btn btn-secondary me-2">Shop Collection</a>
-            <a href="#our-story" class="btn btn-white-outline">Our Story</a>
+            <?php foreach ($page_data['hero']['buttons'] as $button): ?>
+              <a href="<?php echo $button['url']; ?>" class="<?php echo $button['class']; ?>"><?php echo $button['text']; ?></a>
+            <?php endforeach; ?>
           </p>
         </div>
       </div>
@@ -26,50 +34,22 @@
   <div class="container">
     <div class="row mb-5">
       <div class="col-lg-5 mx-auto text-center">
-        <h2 class="custom-section-title">Company Principles</h2>
+        <h2 class="custom-section-title"><?php echo $page_data['section_title']; ?></h2>
       </div>
     </div>
 
     <div class="row">
+      <?php foreach ($page_data['principles'] as $principle): ?>
       <div class="col-6 col-md-6 col-lg-3 mb-4">
         <div class="feature text-center custom-values-feature">
           <div class="icon mb-3 custom-values-icon">
-            <img src="images/icons/save-time.png" alt="Quality" class="img-fluid">
+            <img src="<?php echo $principle['icon']; ?>" alt="<?php echo $principle['alt']; ?>" class="img-fluid">
           </div>
-          <h3>Time is our money</h3>
-          <p>We honor the art of shoemaking by blending traditional techniques with modern precision.</p>
+          <h3><?php echo $principle['title']; ?></h3>
+          <p><?php echo $principle['description']; ?></p>
         </div>
       </div>
-
-      <div class="col-6 col-md-6 col-lg-3 mb-4">
-        <div class="feature text-center custom-values-feature">
-          <div class="icon mb-3 custom-values-icon">
-            <img src="images/icons/honesty.png" alt="Innovation" class="imf-fluid">
-          </div>
-          <h3>Honesty is our strength</h3>
-          <p>Every pair is designed for all-day wear, combining ergonomic design with durability.</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-6 col-lg-3 mb-4">
-        <div class="feature text-center custom-values-feature">
-          <div class="icon mb-3 custom-values-icon">
-            <img src="images/icons/ok.png" alt="Sustainability" class="imf-fluid">
-          </div>
-          <h3>Perfection is our power</h3>
-          <p>We use eco-friendly materials and processes to minimize our impact on the planet.</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-6 col-lg-3 mb-4">
-        <div class="feature text-center custom-values-feature">
-          <div class="icon mb-3 custom-values-icon">
-            <img src="images/icons/teamwork.png" alt="Community" class="imf-fluid">
-          </div>
-          <h3>Human resource is our asset</h3>
-          <p>Our products meet international quality, fashion, and safety standards for worldwide markets.</p>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </div>

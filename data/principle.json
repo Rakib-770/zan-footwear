@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Principle",
+    "hero": {
+      "background_image": "images/carousel/ca-7.jpg",
+      "title": "Principle",
+      "description": "Discover the story behind our passion for crafting exceptional footwear that blends timeless style, superior comfort, and long-lasting durability for every step of your journey.",
+      "buttons": [
+        {
+          "text": "Shop Collection",
+          "url": "shop.php",
+          "class": "btn btn-secondary me-2"
+        },
+        {
+          "text": "Our Story",
+          "url": "#our-story",
+          "class": "btn btn-white-outline"
+        }
+      ]
+    },
+    "section_title": "Company Principles",
+    "principles": [
+      {
+        "icon": "images/icons/save-time.png",
+        "alt": "Quality",
+        "title": "Time is our money",
+        "description": "We honor the art of shoemaking by blending traditional techniques with modern precision."
+      },
+      {
+        "icon": "images/icons/honesty.png",
+        "alt": "Innovation",
+        "title": "Honesty is our strength",
+        "description": "Every pair is designed for all-day wear, combining ergonomic design with durability."
+      },
+      {
+        "icon": "images/icons/ok.png",
+        "alt": "Sustainability",
+        "title": "Perfection is our power",
+        "description": "We use eco-friendly materials and processes to minimize our impact on the planet."
+      },
+      {
+        "icon": "images/icons/teamwork.png",
+        "alt": "Community",
+        "title": "Human resource is our asset",
+        "description": "Our products meet international quality, fashion, and safety standards for worldwide markets."
+      }
+    ]
+  }
+}

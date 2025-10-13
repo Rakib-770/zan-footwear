@@ -34,15 +34,14 @@
 
       <div class="collapse navbar-collapse" id="navbarsFurni">
         <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-          <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-          <li><a class="nav-link" href="about.php">About</a></li>
-          <li><a class="nav-link" href="products.php">Products</a></li>
-          <li><a class="nav-link" href="compliance.php">Compliance</a></li>
-          <li><a class="nav-link" href="principle.php">Principle</a></li>
-          <li><a class="nav-link" href="operations.php">Operations</a></li>
-          <li><a class="nav-link" href="strength.php">Strength</a></li>
-          <li><a class="nav-link" href="facilities.php">Facilities</a></li>
-          <li><a class="nav-link" href="contact.php">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
+          <li><a class="nav-link" href="about.php">ABOUT</a></li>
+          <li><a class="nav-link" href="products.php">PRODUCTS</a></li>
+          <li><a class="nav-link" href="compliance.php">COMPLIANCE</a></li>
+          <li><a class="nav-link" href="principle.php">PRINCIPLE</a></li>
+          <li><a class="nav-link" href="operations.php">OPERATION</a></li>
+          <li><a class="nav-link" href="facilities.php">FACILITIES</a></li>
+          <li><a class="nav-link" href="contact.php">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -51,16 +50,22 @@
   <script>
     // Function to set active navigation link
     function setActiveNavLink() {
-      // Get current page URL
-      const currentLocation = window.location.href;
+      // Get current page path without .php extension
+      const currentPath = window.location.pathname.replace(/\.php$/, '');
 
       // Get all navigation links
       const navLinks = document.querySelectorAll('.custom-navbar-nav .nav-link');
 
       // Loop through each link
       navLinks.forEach(link => {
-        // Check if the link's href matches the current URL
-        if (link.href === currentLocation) {
+        // Get link path without .php extension
+        const linkPath = link.getAttribute('href').replace(/\.php$/, '');
+
+        // Check if the link's path matches the current path
+        if (currentPath.endsWith(linkPath) ||
+          (currentPath === '' && linkPath === 'index') ||
+          (currentPath.endsWith('/') && linkPath === 'index')) {
+
           // Add active class to the link
           link.classList.add('active');
 

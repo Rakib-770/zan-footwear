@@ -1,0 +1,175 @@
+{
+    "hero_section": {
+        "background_image": "images\/carousel\/new-men.png",
+        "title": "About Zan Footwear",
+        "description": "Discover the story behind our passion for crafting exceptional footwear that blends timeless style, superior comfort, and long-lasting durability for every step of your journey.",
+        "primary_button": {
+            "text": "Shop Collection",
+            "link": "shop.php"
+        },
+        "secondary_button": {
+            "text": "Our Story",
+            "link": "#our-story"
+        }
+    },
+    "our_story_section": {
+        "title": "Our Story",
+        "description": "Founded in 2025, Zan Footwear Industries Ltd. is a proudly Bangladeshi footwear manufacturer committed to delivering high-quality, stylish, and durable footwear for both local and international markets.",
+        "paragraphs": [
+            "With a passion for craftsmanship and a dedication to excellence, we specialize in producing a wide variety of shoes \u2014 including casual, formal, sports, and safety footwear \u2014 designed to meet the demands of modern lifestyles and global standards.",
+            "Our journey began with a simple vision: to create footwear that doesn't just protect your feet but enhances your every step. Today, we're proud to serve customers across multiple continents while maintaining our commitment to quality and innovation."
+        ],
+        "image": "images\/products\/new-about.png",
+        "features": [
+            {
+                "icon": "images\/support.svg",
+                "title": "Quality Craftsmanship",
+                "description": "Every pair is crafted with precision using premium materials and time-tested techniques."
+            },
+            {
+                "icon": "images\/return.svg",
+                "title": "Innovative Design",
+                "description": "We blend traditional shoemaking with modern technology for unparalleled comfort."
+            }
+        ]
+    },
+    "mission_vision_section": {
+        "image": "images\/grid\/grid-3.jpg",
+        "title": "Our Mission & Vision",
+        "mission": {
+            "title": "Our Mission",
+            "description": "To create exceptional footwear that combines style, comfort, and durability while maintaining ethical manufacturing practices and sustainable operations. We strive to make quality footwear accessible to everyone without compromising on craftsmanship or materials."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To become a globally recognized footwear brand known for innovation, quality, and social responsibility. We aim to set new standards in the footwear industry while positively impacting the communities we serve through job creation and sustainable practices."
+        }
+    },
+    "values_section": {
+        "title": "OUR VALUES",
+        "values": [
+            {
+                "icon": "images\/icons\/shoe.png",
+                "title": "Craftsmanship",
+                "description": "We honor the art of shoemaking by blending traditional techniques with modern precision."
+            },
+            {
+                "icon": "images\/icons\/shoes.png",
+                "title": "Comfort & Performance",
+                "description": "Every pair is designed for all-day wear, combining ergonomic design with durability."
+            },
+            {
+                "icon": "images\/icons\/sneaker.png",
+                "title": "Sustainability",
+                "description": "We use eco-friendly materials and processes to minimize our impact on the planet."
+            },
+            {
+                "icon": "images\/icons\/certificate.png",
+                "title": "Global Standards",
+                "description": "Our products meet international quality, fashion, and safety standards for worldwide markets."
+            }
+        ]
+    },
+    "manufacturing_section": {
+        "title": "Our Manufacturing Excellence",
+        "description": "At <strong>Zan Footwear Industries Ltd.<\/strong>, we combine craftsmanship with cutting-edge technology to deliver footwear that meets the evolving demands of international markets. From casual wear to performance-driven shoes, every product is built with precision and care.",
+        "features": [
+            "Advanced production lines for sneakers, sports, and casual footwear",
+            "Strict quality assurance at every stage of manufacturing",
+            "Expert shoemakers with decades of industry knowledge",
+            "Use of eco-friendly materials and sustainable practices",
+            "Compliance with global fashion trends and safety standards"
+        ],
+        "conclusion": "We proudly export to multiple international markets and are open to building long-term partnerships with brands, wholesalers, and retailers who value premium quality, reliability, and ethical sourcing.",
+        "images": [
+            "images\/grid\/grid-1.jpg",
+            "images\/grid\/grid-3.jpg",
+            "images\/grid\/grid-2.jpg"
+        ]
+    },
+    "team_section": {
+        "title": "OUR LEADERSHIP TEAM",
+        "members": [
+            {
+                "image": "images\/management\/management-1.png",
+                "name": "Mir Nasir Hossain",
+                "position": "Managing Director",
+                "bio": "Experienced leader with over 15 years in industry expertise and strategic vision.",
+                "social_links": [
+                    {
+                        "icon": "fab fa-linkedin-in",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "fab fa-twitter",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "far fa-envelope",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "image": "images\/management\/management-2.png",
+                "name": "Mahreen Nasir",
+                "position": "Director",
+                "bio": "Creative thinker with a passion for innovation and team development.",
+                "social_links": [
+                    {
+                        "icon": "fab fa-linkedin-in",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "fab fa-instagram",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "far fa-envelope",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "image": "images\/management\/management-3.png",
+                "name": "Ruslan Nasir",
+                "position": "Director",
+                "bio": "Operations expert focused on efficiency and sustainable growth strategies.",
+                "social_links": [
+                    {
+                        "icon": "fab fa-linkedin-in",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "fab fa-facebook-f",
+                        "link": "#"
+                    },
+                    {
+                        "icon": "far fa-envelope",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "global_presence_section": {
+        "title": "GLOBAL PRESENCE",
+        "features": [
+            {
+                "icon": "images\/icons\/share.png",
+                "title": "Export Reach",
+                "description": "Our footwear is trusted in Europe, North America, the Middle East, and Asia, with a growing footprint in emerging markets worldwide."
+            },
+            {
+                "icon": "images\/icons\/worldwide.png",
+                "title": "Global Partnerships",
+                "description": "We work closely with international brands, wholesalers, and retailers to deliver customized solutions backed by reliability and integrity."
+            },
+            {
+                "icon": "images\/icons\/award.png",
+                "title": "Quality Certifications",
+                "description": "Our facilities adhere to ISO standards and international compliance protocols, ensuring every product meets the highest benchmarks of quality and safety."
+            }
+        ]
+    }
+}

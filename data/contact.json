@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Contact",
+  "hero": {
+    "backgroundImage": "images/carousel/man-foot.jpg",
+    "title": "Contact",
+    "description": "Discover the story behind our passion for crafting exceptional footwear that blends timeless style, superior comfort, and long-lasting durability for every step of your journey.",
+    "buttons": [
+      {
+        "text": "Shop Collection",
+        "url": "shop.php",
+        "class": "btn btn-secondary me-2"
+      },
+      {
+        "text": "Our Story",
+        "url": "#our-story",
+        "class": "btn btn-white-outline"
+      }
+    ]
+  },
+  "contactInfo": {
+    "address": {
+      "icon": "bi bi-geo-alt-fill",
+      "text": "House- 04, Road- 21, Gulshan- 1, Dhaka- 1212"
+    },
+    "email": {
+      "icon": "bi bi-envelope-fill",
+      "text": "info@zanfootwear.com"
+    },
+    "phone": {
+      "icon": "bi bi-telephone-fill",
+      "text": "+1 294 3925 3939"
+    }
+  },
+  "socialMedia": {
+    "facebook": {
+      "platform": "Facebook",
+      "url": "https://facebook.com/zanfootwear",
+      "icon": "bi bi-facebook"
+    },
+    "instagram": {
+      "platform": "Instagram",
+      "url": "https://instagram.com/zanfootwear",
+      "icon": "bi bi-instagram"
+    },
+    "twitter": {
+      "platform": "Twitter",
+      "url": "https://twitter.com/zanfootwear",
+      "icon": "bi bi-twitter"
+    },
+    "linkedin": {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/zanfootwear",
+      "icon": "bi bi-linkedin"
+    }
+  },
+  "form": {
+    "firstName": {
+      "label": "First name",
+      "id": "fname",
+      "type": "text"
+    },
+    "lastName": {
+      "label": "Last name",
+      "id": "lname",
+      "type": "text"
+    },
+    "email": {
+      "label": "Email address",
+      "id": "email",
+      "type": "email"
+    },
+    "message": {
+      "label": "Message",
+      "id": "message",
+      "rows": 5,
+      "cols": 30
+    },
+    "submitButton": {
+      "text": "Send Message",
+      "class": "btn btn-primary-hover-outline"
+    }
+  },
+  "map": {
+    "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.155426845813!2d90.32207797616914!3d24.445392278202632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37566b67eb497219%3A0x91a07d3f8ac19bd6!2sZAN%20Footwear%20Industries%20Ltd.!5e0!3m2!1sen!2sbd!4v1760337085770!5m2!1sen!2sbd\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  }
+}
