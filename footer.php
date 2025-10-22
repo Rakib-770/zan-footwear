@@ -6,75 +6,135 @@ $mapIframe = $contactData['map']['iframe'];
 ?>
 
 <!-- Start Footer Section -->
-<footer class="footer-section">
-    <div class="container relative">
+<footer class="custom-footer-section">
+  <div class="custom-footer-container">
+    <!-- Main Footer Content -->
+    <div class="custom-footer-content">
+      <!-- Logo and Description -->
+      <div class="custom-footer-brand">
+        <div class="custom-footer-logo-wrapper">
+          <a href="index.php" class="custom-footer-logo">
+            <img src="images/logo/white-logo.png" alt="Zan Logo" class="custom-logo-default">
+            <img src="images/logo/logo.png" alt="Zan Logo Hover" class="custom-logo-hover">
+          </a>
+        </div>
+        <p class="custom-footer-description">Creating innovative solutions for tomorrow's challenges. Join us in building a better future.</p>
 
-      <div class="row g-5 mb-5">
-        <!-- Logo and Social Media - 3 columns -->
-        <div class="col-lg-3">
-          <div class="mb-4 footer-logo-wrapper">
-            <a href="index.php" class="footer-logo">
-              <img src="images/logo/white-logo.png" alt="Zan Logo" class="logo-default">
-              <img src="images/logo/logo.png" alt="Zan Logo Hover" class="logo-hover">
+        <!-- Social Media -->
+        <ul class="custom-footer-social">
+          <li>
+            <a href="<?php echo $socialMedia['facebook']['url']; ?>" target="_blank" class="custom-social-link">
+              <span class="custom-social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </span>
+              <span class="custom-social-tooltip">Facebook</span>
             </a>
+          </li>
+          <li>
+            <a href="<?php echo $socialMedia['twitter']['url']; ?>" target="_blank" class="custom-social-link">
+              <span class="custom-social-icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span class="custom-social-tooltip">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $socialMedia['instagram']['url']; ?>" target="_blank" class="custom-social-link">
+              <span class="custom-social-icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span class="custom-social-tooltip">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $socialMedia['linkedin']['url']; ?>" target="_blank" class="custom-social-link">
+              <span class="custom-social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+              <span class="custom-social-tooltip">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="custom-footer-links">
+        <h3 class="custom-footer-heading">Quick Links</h3>
+        <ul class="custom-footer-list">
+          <li><a href="#" class="custom-footer-link">Home</a></li>
+          <li><a href="#" class="custom-footer-link">About us</a></li>
+          <li><a href="#" class="custom-footer-link">Products</a></li>
+          <li><a href="#" class="custom-footer-link">Services</a></li>
+          <li><a href="#" class="custom-footer-link">Operation</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="custom-footer-contact-info">
+        <h3 class="custom-footer-heading">Contact Info</h3>
+        <div class="custom-contact-details">
+          <div class="custom-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="custom-contact-label">Address</span>
+              <span class="custom-contact-value">123 Business Ave, Suite 100</span>
+            </div>
           </div>
-
-          <ul class="list-unstyled custom-social">
-            <li><a href="<?php echo $socialMedia['facebook']['url']; ?>" target="_blank"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-            <li><a href="<?php echo $socialMedia['twitter']['url']; ?>" target="_blank"><span class="fa fa-brands fa-twitter"></span></a></li>
-            <li><a href="<?php echo $socialMedia['instagram']['url']; ?>" target="_blank"><span class="fa fa-brands fa-instagram"></span></a></li>
-            <li><a href="<?php echo $socialMedia['linkedin']['url']; ?>" target="_blank"><span class="fa fa-brands fa-linkedin"></span></a></li>
-          </ul>
-        </div>
-
-        <!-- Map - 6 columns (double width) -->
-        <div class="col-lg-6">
-          <div class="custom-footer-map">
-            <?php echo $mapIframe; ?>
+          <div class="custom-contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span class="custom-contact-label">Phone</span>
+              <span class="custom-contact-value">+1 (555) 123-4567</span>
+            </div>
           </div>
-        </div>
-
-        <!-- Useful Links - 3 columns -->
-        <div class="col-lg-3">
-          <div class="custom-footer-links">
-            <h3>Useful Links</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Operation</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
+          <div class="custom-contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="custom-contact-label">Email</span>
+              <span class="custom-contact-value">info@zanexample.com</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="border-top copyright">
-        <div class="row pt-4">
-          <div class="col-lg-6">
-            <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>
-                document.write(new Date().getFullYear());
-              </script>. All Rights Reserved.
-            </p>
-          </div>
-
-          <div class="col-lg-6 text-center text-lg-end">
-            <ul class="list-unstyled d-inline-flex ms-auto">
-              <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-
+      <!-- Map Section -->
+      <div class="custom-footer-contact">
+        <h3 class="custom-footer-heading">Find Us</h3>
+        <div class="custom-footer-map">
+          <?php echo $mapIframe; ?>
         </div>
       </div>
-
     </div>
-  </footer>
-  <!-- End Footer Section -->
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/tiny-slider.js"></script>
-  <script src="js/custom.js"></script>
-  </body>
+    <!-- Copyright -->
+    <div class="custom-footer-bottom">
+      <div class="custom-footer-copyright">
+        <p>&copy; <script>
+            document.write(new Date().getFullYear());
+          </script> Zan. All Rights Reserved.</p>
+      </div>
+      <div class="custom-footer-legal">
+        <ul class="custom-legal-links">
+          <li><a href="#" class="custom-legal-link">Terms & Conditions</a></li>
+          <li><a href="#" class="custom-legal-link">Privacy Policy</a></li>
+          <li><a href="#" class="custom-legal-link">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  </html>
+  <!-- Animated Background Elements -->
+  <div class="custom-footer-bg-elements">
+    <div class="custom-bg-circle custom-bg-circle-1"></div>
+    <div class="custom-bg-circle custom-bg-circle-2"></div>
+    <div class="custom-bg-circle custom-bg-circle-3"></div>
+  </div>
+</footer>
+<!-- End Footer Section -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>

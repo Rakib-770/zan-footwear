@@ -36,16 +36,19 @@ a.more {
   background: #eff2f1 !important;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-/* .custom-navbar .navbar-brand {
-  font-size: 32px;
-  font-weight: 600;
+.custom-navbar.scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(239, 242, 241, 0.95) !important;
+  backdrop-filter: blur(10px);
 }
-
-.custom-navbar .navbar-brand>span {
-  opacity: .4;
-} */
 
 .custom-navbar .navbar-toggler {
   border-color: transparent;
@@ -796,135 +799,6 @@ a.more {
 .blog-section .post-entry:hover .post-thumbnail img,
 .blog-section .post-entry:focus .post-thumbnail img {
   opacity: .7;
-}
-
-.footer-section {
-  padding: 80px 0;
-  /* background: #ffffff; */
-  background: #25457e;
-}
-
-.footer-section .relative {
-  position: relative;
-}
-
-.footer-section a {
-  text-decoration: none;
-  color: #faf1f1;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-}
-
-.footer-section a:hover {
-  color: rgba(47, 47, 47, 0.5);
-}
-
-.footer-section .subscription-form {
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 2;
-  margin-top: 100px;
-}
-
-@media (min-width: 992px) {
-  .footer-section .subscription-form {
-    margin-top: 0px;
-    margin-bottom: 80px;
-  }
-}
-
-.footer-section .subscription-form h3 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #25457e;
-}
-
-.footer-section .subscription-form .form-control {
-  height: 50px;
-  border-radius: 10px;
-  font-family: "Inter", sans-serif;
-}
-
-.footer-section .subscription-form .form-control:active,
-.footer-section .subscription-form .form-control:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-color: #25457e;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-.footer-section .subscription-form .form-control::-webkit-input-placeholder {
-  font-size: 16px;
-}
-
-.footer-section .subscription-form .form-control::-moz-placeholder {
-  font-size: 16px;
-}
-
-.footer-section .subscription-form .form-control:-ms-input-placeholder {
-  font-size: 16px;
-}
-
-.footer-section .subscription-form .form-control:-moz-placeholder {
-  font-size: 16px;
-}
-
-.footer-section .subscription-form .btn {
-  border-radius: 10px !important;
-}
-
-.footer-section .links-wrap {
-  margin-top: 0px;
-}
-
-@media (min-width: 992px) {
-  .footer-section .links-wrap {
-    margin-top: 54px;
-  }
-}
-
-.footer-section .links-wrap ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section .footer-logo-wrap .footer-logo {
-  font-size: 32px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #25457e;
-}
-
-.footer-section .custom-social li {
-  margin: 2px;
-  display: inline-block;
-}
-
-.footer-section .custom-social li a {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  display: inline-block;
-  background: #dce5e4;
-  color: #25457e;
-  border-radius: 50%;
-}
-
-.footer-section .custom-social li a:hover {
-  background: #25457e;
-  color: #ffffff;
-}
-
-.footer-section .border-top {
-  border-color: #dce5e4;
-}
-
-.footer-section .border-top.copyright {
-  font-size: 14px !important;
-  color: #e4e4e4;
 }
 
 .untree_co-section {
