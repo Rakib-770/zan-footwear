@@ -1,0 +1,57 @@
+{
+    "hero_section": {
+        "background_image": "images\/carousel\/ca-6.jpg",
+        "title": "Compliance",
+        "description": "At Zan Footwear, we are committed to ethical manufacturing, sustainability, and maintaining the highest international compliance standards. Our products are made responsibly—ensuring fair labor, eco-conscious materials, and premium craftsmanship.",
+        "primary_button": {
+            "text": "Explore Collection",
+            "link": "shop.php"
+        },
+        "secondary_button": {
+            "text": "View Certifications",
+            "link": "#certifications"
+        }
+    },
+    "commitment_section": {
+        "title": "Our Commitment to Compliance",
+        "description": "Zan Footwear strictly adheres to international compliance standards ensuring ethical manufacturing, environmental responsibility, and worker welfare at every step of production.",
+        "image": "images\/grid\/compliance.jpg",
+        "features": [
+            {
+                "icon": "images\/icons\/ethical.png",
+                "title": "Ethical Manufacturing",
+                "description": "We operate under fair labor practices, maintaining safe working conditions and equitable wages."
+            },
+            {
+                "icon": "images\/icons\/environment.png",
+                "title": "Sustainable Materials",
+                "description": "From recycled leather to eco-friendly rubber, sustainability is built into every pair we craft."
+            },
+            {
+                "icon": "images\/icons\/audit.png",
+                "title": "Audited Supply Chain",
+                "description": "Our factories undergo regular third-party audits to maintain compliance and transparency."
+            },
+            {
+                "icon": "images\/icons\/certified.png",
+                "title": "Certified Standards",
+                "description": "We are certified by globally recognized organizations including Amfori BSCI, Sedex, and ISO."
+            }
+        ]
+    },
+    "certifications_section": {
+        "title": "Certifications",
+        "certifications": [
+            {
+                "logo": "images\/logo\/amfori.png",
+                "title": "Amfori BSCI",
+                "description": "Ensuring ethical supply chains and fair labor practices."
+            },
+            {
+                "logo": "images\/logo\/Sedex_Logo.png",
+                "title": "Sedex",
+                "description": "Promoting transparency and sustainable sourcing across our operations."
+            }
+        ]
+    }
+}

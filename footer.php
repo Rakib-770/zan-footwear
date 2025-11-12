@@ -3,6 +3,7 @@
 $contactData = json_decode(file_get_contents('data/contact.json'), true);
 $socialMedia = $contactData['socialMedia'];
 $mapIframe = $contactData['map']['iframe'];
+$contactInfo = $contactData['contactInfo'];
 ?>
 
 <!-- Start Footer Section -->
@@ -74,24 +75,24 @@ $mapIframe = $contactData['map']['iframe'];
         <h3 class="custom-footer-heading">Contact Info</h3>
         <div class="custom-contact-details">
           <div class="custom-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="<?php echo htmlspecialchars($contactInfo['address']['icon']); ?>"></i>
             <div>
               <span class="custom-contact-label">Address</span>
-              <span class="custom-contact-value">123 Business Ave, Suite 100</span>
+              <span class="custom-contact-value"><?php echo htmlspecialchars($contactInfo['address']['text']); ?></span>
             </div>
           </div>
           <div class="custom-contact-item">
-            <i class="fas fa-phone"></i>
+            <i class="<?php echo htmlspecialchars($contactInfo['phone']['icon']); ?>"></i>
             <div>
               <span class="custom-contact-label">Phone</span>
-              <span class="custom-contact-value">+1 (555) 123-4567</span>
+              <span class="custom-contact-value"><?php echo htmlspecialchars($contactInfo['phone']['text']); ?></span>
             </div>
           </div>
           <div class="custom-contact-item">
-            <i class="fas fa-envelope"></i>
+            <i class="<?php echo htmlspecialchars($contactInfo['email']['icon']); ?>"></i>
             <div>
               <span class="custom-contact-label">Email</span>
-              <span class="custom-contact-value">info@zanexample.com</span>
+              <span class="custom-contact-value"><?php echo htmlspecialchars($contactInfo['email']['text']); ?></span>
             </div>
           </div>
         </div>

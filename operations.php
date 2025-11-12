@@ -1,18 +1,32 @@
-<?php include 'header.php'; ?>
+<?php
+include 'header.php';
+
+// Load JSON data
+$jsonData = file_get_contents('data/operations.json');
+$data = json_decode($jsonData, true);
+
+// Shortcuts for readability
+$hero = $data['hero_section'];
+$operations = $data['operations_grid']['operations'];
+?>
 
 <!-- Start Inner Page Hero -->
-<div class="custom-hero2-about" style="background-image: url('images/carousel/ca-8.jpg');">
+<div class="custom-hero2-about" style="background-image: url('<?php echo htmlspecialchars($hero['background_image']); ?>');">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
         <div class="custom-hero2-content">
-          <h1>Operations</h1>
+          <h1><?php echo htmlspecialchars($hero['title']); ?></h1>
           <p class="mb-4">
-            ZAN Footware Ltd. is an export-oriented sole manufacturing company based in Bangladesh that started as a limited liability company in 2023 with a commitment to producing the highest quality footwear and optimizing customer satisfaction. In doing so, from the very beginning, ZAN has provided an ethical, safe, and friendly workplace for its employees
+            <?php echo htmlspecialchars($hero['description']); ?>
           </p>
           <p>
-            <a href="shop.php" class="btn btn-secondary me-2">Shop Collection</a>
-            <a href="#our-story" class="btn btn-white-outline">Our Story</a>
+            <a href="<?php echo htmlspecialchars($hero['primary_button']['link']); ?>" class="btn btn-secondary me-2">
+              <?php echo htmlspecialchars($hero['primary_button']['text']); ?>
+            </a>
+            <a href="<?php echo htmlspecialchars($hero['secondary_button']['link']); ?>" class="btn btn-white-outline">
+              <?php echo htmlspecialchars($hero['secondary_button']['text']); ?>
+            </a>
           </p>
         </div>
       </div>
@@ -23,62 +37,19 @@
 
 <div class="blog-section">
   <div class="container">
-
     <div class="row">
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/people.png" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">People</a></h3>
+      <?php foreach ($operations as $operation): ?>
+        <div class="col-12 col-sm-6 col-md-4 mb-5">
+          <div class="post-entry2">
+            <a href="<?php echo htmlspecialchars($operation['link']); ?>" class="post-thumbnail">
+              <img src="<?php echo htmlspecialchars($operation['image']); ?>" alt="<?php echo htmlspecialchars($operation['title']); ?>" class="img-fluid">
+            </a>
+            <div class="post-content-entry">
+              <h3><a href="<?php echo htmlspecialchars($operation['link']); ?>"><?php echo htmlspecialchars($operation['title']); ?></a></h3>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/pdc.jpg" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">Product Development Center</a></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/quality.jpg" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">Quality Control</a></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/lab.png" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">Internal Lab</a></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/quality.jpg" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">Compliance</a></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 mb-5">
-        <div class="post-entry2">
-          <a href="#" class="post-thumbnail"><img src="images/operation/lab.png" alt="Image" class="img-fluid"></a>
-          <div class="post-content-entry">
-            <h3><a href="#">Training Center</a></h3>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </div>

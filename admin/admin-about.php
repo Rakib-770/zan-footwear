@@ -10,10 +10,6 @@ if (!isset($_SESSION['admin_logged_in'])) {
 // Helper: allowed image extensions
 $ALLOWED_EXT = ['jpg', 'jpeg', 'png', 'webp', 'gif', 'svg'];
 
-/**
- * Save uploaded image file and return new relative path (or null on no upload / error).
- * Upload destination folder is relative to project root: images/uploads/
- */
 function handle_upload($fileField, $subfolder = '')
 {
     global $ALLOWED_EXT;

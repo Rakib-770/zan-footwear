@@ -1,0 +1,49 @@
+{
+    "hero_section": {
+        "background_image": "images\/carousel\/ca-8.jpg",
+        "title": "Operations",
+        "description": "ZAN Footware Ltd. is an export-oriented sole manufacturing company based in Bangladesh that started as a limited liability company in 2023 with a commitment to producing the highest quality footwear and optimizing customer satisfaction. In doing so, from the very beginning, ZAN has provided an ethical, safe, and friendly workplace for its employees",
+        "primary_button": {
+            "text": "Shop Collection",
+            "link": "shop.php"
+        },
+        "secondary_button": {
+            "text": "Our Story",
+            "link": "#our-story"
+        }
+    },
+    "operations_grid": {
+        "operations": [
+            {
+                "image": "images\/operation\/people.png",
+                "title": "People",
+                "link": "#"
+            },
+            {
+                "image": "images\/operation\/pdc.jpg",
+                "title": "Product Development Center",
+                "link": "#"
+            },
+            {
+                "image": "images\/operation\/quality.jpg",
+                "title": "Quality Control",
+                "link": "#"
+            },
+            {
+                "image": "images\/operation\/lab.png",
+                "title": "Internal Lab",
+                "link": "#"
+            },
+            {
+                "image": "images\/operation\/quality.jpg",
+                "title": "Compliance",
+                "link": "#"
+            },
+            {
+                "image": "images\/operation\/lab.png",
+                "title": "Training Center",
+                "link": "#"
+            }
+        ]
+    }
+}

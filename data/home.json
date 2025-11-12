@@ -1,0 +1,105 @@
+{
+    "hero_section": {
+        "carousel_images": [
+            "images\/carousel\/ca-6.jpg",
+            "images\/carousel\/ca-7.jpg",
+            "images\/carousel\/ca-10.jpg"
+        ],
+        "title": "Step Into Comfort and Confidence",
+        "description": "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+        "primary_button": {
+            "text": "Shop Now",
+            "link": ""
+        },
+        "secondary_button": {
+            "text": "Explore",
+            "link": "#"
+        }
+    },
+    "about_section": {
+        "title": "ABOUT US",
+        "description": "Founded in 2025, Zan Footwear Industries Ltd. is a proudly Bangladeshi footwear manufacturer committed to delivering high-quality, stylish, and durable footwear for both local and international markets. With a passion for craftsmanship and a dedication to excellence, we specialize in producing a wide variety of shoes — including casual, formal, sports, and safety footwear — designed to meet the demands of modern lifestyles and global standards.",
+        "additional_description": "Zan Footwear Industries Ltd. is equipped with modern production facilities and a dedicated quality control team to ensure that every product meets international requirements. We currently export to several countries and welcome long-term partnerships with global buyers, retailers, and distributors.",
+        "features": [
+            {
+                "icon": "images\/support.svg",
+                "title": "Innovation in our Approach",
+                "description": "We are determined to continuously challenge ourselves with the strength of conviction for the excellence in business. We perceive opportunity in the face of every adversity and lead change through innovation in every business aspect."
+            },
+            {
+                "icon": "images\/return.svg",
+                "title": "Honesty in practice",
+                "description": "We live with integrity with ourselves, our customers, our stakeholders and our community through our products and services. We embrace accountability and behave in an honest, fair, and ethical manner, showing consistency in words and actions."
+            }
+        ],
+        "image": "images\/products\/product-1.jpg"
+    },
+    "achievements_section": {
+        "title": "ACHIEVEMENTS",
+        "achievements": [
+            {
+                "image": "images\/achievements\/award-1.jpg",
+                "title": "National Export Trophy Award (Gold) 2022-2023",
+                "description": "Mir Telecom Ltd has achieved National Export Trophy Award (Gold) for the Year 2016-17 for its outstanding contribution on country's Export business."
+            },
+            {
+                "image": "images\/achievements\/award-2.jpg",
+                "title": "National Export Trophy 2021-2022",
+                "description": "Mir Telecom Ltd has been awarded the \"National Export Trophy\" in recognition of its outstanding contribution to the export sector of Bangladesh in the fiscal year 2021-2022."
+            },
+            {
+                "image": "images\/achievements\/award-3.jpg",
+                "title": "Mir Cloud Awarded 1st Runner-Up Trophy in Best Pavilion",
+                "description": "Mir Cloud has been awarded the '1st Runner-up Trophy' in the Best Pavilion category at the BASIS SoftExpo 2020."
+            },
+            {
+                "image": "images\/achievements\/award-4.jpg",
+                "title": "Prestigious CIP award",
+                "description": "Mir Nasir Hossain, Managing Director has been awarded by the prestigious CIP award for the year 2017 in the Service Sector category. Mahreen Nasir, Director, has been awarded by the prestigious CIP award for the year 2017 in the Large Industry category."
+            }
+        ]
+    },
+    "strength_section": {
+        "title": "OUR STRENGTH",
+        "strengths": [
+            {
+                "number": "50,000 SFT",
+                "description": "Actual working space and well-equipped with brand new machineries from Italy and Germany"
+            },
+            {
+                "number": "1,010 Staff",
+                "description": "Highly skilled staff including foreign experts are dedicated to complete orders on time"
+            },
+            {
+                "number": "100,000 Pairs",
+                "description": "We manufacture 100,000 pairs of high-quality fashionable shoes per month"
+            }
+        ]
+    },
+    "news_section": {
+        "title": "NEWS AND EVENTS",
+        "news": [
+            {
+                "image": "images\/blogs\/blog-1.png",
+                "title": "Mir Telecom Group Corporate House Inauguration",
+                "author": "Kristin Watson",
+                "date": "Dec 19, 2021",
+                "link": "#"
+            },
+            {
+                "image": "images\/blogs\/blog-2.jpg",
+                "title": "How To Keep Your Furniture Clean",
+                "author": "Robert Fox",
+                "date": "Dec 15, 2021",
+                "link": "#"
+            },
+            {
+                "image": "images\/blogs\/blog-3.jpg",
+                "title": "Small Space Furniture Apartment Ideas",
+                "author": "Kristin Watson",
+                "date": "Dec 12, 2021",
+                "link": "#"
+            }
+        ]
+    }
+}

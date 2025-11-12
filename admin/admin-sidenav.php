@@ -41,19 +41,13 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <li class="menu-item <?php echo $current_page == 'admin-principle.php' ? 'active' : ''; ?>">
             <a href="admin-principle.php">
                 <i class="fas fa-bullseye me-2"></i>
-                <span>Principles & Values</span>
+                <span>Principles</span>
             </a>
         </li>
         <li class="menu-item <?php echo $current_page == 'admin-operations.php' ? 'active' : ''; ?>">
             <a href="admin-operations.php">
                 <i class="fas fa-cogs me-2"></i>
                 <span>Operations</span>
-            </a>
-        </li>
-        <li class="menu-item <?php echo $current_page == 'admin-strength.php' ? 'active' : ''; ?>">
-            <a href="admin-strength.php">
-                <i class="fas fa-chart-line me-2"></i>
-                <span>Strengths</span>
             </a>
         </li>
         <li class="menu-item <?php echo $current_page == 'admin-facilities.php' ? 'active' : ''; ?>">
